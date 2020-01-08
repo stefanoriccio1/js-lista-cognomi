@@ -11,11 +11,12 @@ console.log(listaCognomi);
 listaCognomi.push(cognome);
 console.log(listaCognomi);
 
-// ciclo for
-
-// for (var i = 0; i < listaCognomi.length; i++) {
-//   console.log(listaCognomi[i]);
-// }
-
 // stampa la lista ordinata alfabeticamente (in html ul > li).
+listaCognomi.sort();
+console.log(listaCognomi);
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
+
+
+for (var i = 0; i < listaCognomi.length; i++) {
+  console.log(listaCognomi[i]);
+}
