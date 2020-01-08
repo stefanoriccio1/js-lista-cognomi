@@ -17,5 +17,5 @@ for (var i = 0; i < listaCognomi.length; i++) {
 }
 console.log(listaCognomi.indexOf(cognome));
 
-var posizione = listaCognomi.indexOf(cognome);
+var posizione = listaCognomi.indexOf(cognome) + 1;
 document.getElementById('posizione_cognome').innerHTML = posizione;
