@@ -18,5 +18,5 @@ console.log(listaCognomi);
 
 
 for (var i = 0; i < listaCognomi.length; i++) {
-  console.log(listaCognomi[i]);
+  document.getElementById('squadra').innerHTML=('<li>' + listaCognomi[i] + '</li>' + '<br>')
 }
