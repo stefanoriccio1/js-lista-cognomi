@@ -4,9 +4,13 @@
 
 var cognome = prompt('Qual\'è il tuo cognome?');
 console.log(cognome);
+while (cognome.length <=0){
+  cognome = prompt('Qual\'è il tuo cognome?');
+}
 // inseriscilo in un array con altri cognomi,
 var listaCognomi = ['Dybala', 'Ronaldo', 'Bonucci', 'Chiellini', 'Buffon','Del Piero'];
 console.log(listaCognomi);
+
 
 listaCognomi.push(cognome);
 console.log(listaCognomi);
@@ -16,7 +20,6 @@ listaCognomi.sort();
 console.log(listaCognomi);
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
 
-
 for (var i = 0; i < listaCognomi.length; i++) {
-  document.getElementById('squadra').innerHTML=('<li>' + listaCognomi[i] + '</li>' + '<br>')
+  document.getElementById('squadra').innerHTML +=('<li>' + listaCognomi[i] + '</li>')
 }
