@@ -8,6 +8,8 @@ while (cognome.length <=0){
 var listaCognomi = ['Dybala', 'Ronaldo', 'Bonucci', 'Chiellini', 'Buffon','Del Piero'];
 console.log(listaCognomi);
 
+// var cognome = cognome.toLowerCase();
+// cognome = cognome + charAt(0).toUpperCase() + cognome.slice(1);
 listaCognomi.push(cognome);
 listaCognomi.sort();
 
